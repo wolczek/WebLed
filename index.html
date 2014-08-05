@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>GPIO on Raspberry Pi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Turn On/Off the LED</h1>
+        <div class="btn-holder col-sm-3 col-xs-6">
+            <button id="ledon" type="button" class="btn btn-success" disabled="disabled">ON</button>
+        </div>
+        <div class="btn-holder col-sm-3 col-xs-6">
+            <button id="ledoff" type="button" class="btn btn-danger" disabled="disabled">OFF</button>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
