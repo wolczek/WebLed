@@ -28,5 +28,8 @@ if __name__ == '__main__':
     webapp = HelloWorld()
     webapp.ledapi = LedWebService()
 
+    cherrypy.config.update({'server.socket_host': '0.0.0.0',
+                        'server.socket_port': 8080,
+                       })
     cherrypy.quickstart(webapp, '/', conf)
 
